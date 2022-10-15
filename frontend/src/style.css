@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ecf2f5;
+}
+
+.topbar-font-color {
+  font-size: 13px !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+
+.primary-background {
+  background-color: #348cd4;
+}
+
+.primary-btn {
+  background-color: #348cd4;
+  color: #fff;
+}
+
+.primary-btn:hover {
+  background-color: #306b9b;
+  color: #fff;
+}
+
+.font-color {
+  color: #6e768e;
+  font-size: 13px;
+}
+
+.sfont-color {
+  color: #6e768e;
+}
+
+.sfont-size {
+  font-size: 13px;
+}
+
+.font-active {
+  color: #348cd4;
+}
+
+#wrapper {
+  position: absolute;
+  margin-top: 30px;
+  top: 60px;
+  bottom: 0;
+}
+
+#content-wrapper {
+  height: 100%;
+  width: 100%;
+  padding: 0 20px 20px 20px;
+  overflow-y: auto;
+}
+
+#content-wrapper .row {
+  margin-right: 0;
+  margin-left: 0;
+  padding: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgba(136, 136, 136, 0.204);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(136, 136, 136, 0.492);
+}
+
+:root {
+  --toastify-color-progress-light: linear-gradient(
+    to right,
+    #4cd964,
+    #5ac8fa,
+    #007aff,
+    #34aadc,
+    #5856d6,
+    #ff2d55
+  );
+}

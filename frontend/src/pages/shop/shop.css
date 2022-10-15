@@ -1,0 +1,31 @@
+.sh-img img {
+  max-width: 100%;
+}
+
+.grid-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  padding: 10px;
+  gap: 90px 30px;
+}
+
+.grid-item {
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.sh-card:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sh-card-inf p {
+  margin-bottom: 0px !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+}

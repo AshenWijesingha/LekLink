@@ -1,0 +1,14 @@
+.si-img img {
+  max-width: 100%;
+}
+
+.img-canves {
+  position: relative;
+  width: 100%;
+  min-height: 450px !important;
+  max-height: 450px;
+}
+
+.img-canves img {
+  position: absolute;
+}

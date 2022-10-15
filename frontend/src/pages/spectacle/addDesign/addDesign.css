@@ -1,0 +1,36 @@
+.card {
+  padding: 40px;
+}
+
+#addDesign button,
+#addDesign textarea::placeholder,
+#addDesign input::placeholder {
+  font-size: 13px;
+}
+
+#addDesign input {
+  font-size: 13px;
+}
+
+.img-btn {
+  width: 100px;
+  height: 100px;
+}
+
+.img-close-btn {
+  padding: 2px 7px;
+}
+
+.img-close-container {
+  position: absolute;
+  right: -10px;
+  top: -10px;
+}
+
+.img-wrapper {
+  position: relative;
+}
+
+.des-save-btn {
+  width: 100px;
+}

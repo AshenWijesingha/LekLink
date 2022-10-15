@@ -1,0 +1,17 @@
+.card {
+  padding: 40px;
+}
+
+#addDesign button,
+#addDesign textarea::placeholder,
+#addDesign input::placeholder {
+  font-size: 13px;
+}
+
+#addDesign input {
+  font-size: 13px;
+}
+
+.list-group {
+  z-index: 0;
+}
