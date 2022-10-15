@@ -1,6 +1,6 @@
 
 
-# Project Name - Optical and Eye Channeling Management System.
+# Project Name - LekLink - Lecture Link Management System.
 
 
 ### Technologies used :
