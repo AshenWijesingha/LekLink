@@ -5,6 +5,8 @@ import axios from "axios";
 import { useLocation } from 'react-router-dom'
 import { Link } from "react-router-dom";
 
+
+// download lecture
 function  DownloadLec(){
 
     return (
