@@ -78,7 +78,7 @@ return (
               
                 <h6 className="dark-color" style={{color:"black"}}></h6><h6 class="text-white bg-dark">Lecture Name: {notice.lName}</h6>
                 <h6 className="p-3 mb-2 bg-light text-dark">Module Name:   {notice.mName}</h6>
-                <h6 className="p-3 mb-2 bg-light text-dark">Module No:   {notice.mNo}</h6>
+                <h6 className="p-3 mb-2 bg-light text-dark">Module Code:   {notice.mNo}</h6>
                 <h6 className="p-3 mb-2 bg-light text-dark">Date:   {notice.date}</h6>
                 <h6 className="p-3 mb-2 bg-danger text-white">Message:   {notice.message}</h6> 
                                   
