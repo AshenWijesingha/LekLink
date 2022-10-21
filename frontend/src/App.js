@@ -1,40 +1,39 @@
-import Dashboard from "./pages/dashboard/Dashboard";
-import TopBar from "./components/topbar/TopBar";
-import Sidebar from "./components/sidebar/Sidebar";
-import AddDesign from "./pages/spectacle/addDesign/AddDesign";
-import AllDesign from "./pages/spectacle/allDesign/AllDesign";
-import AddCustomDesign from "./pages/spectacle/addCustomDesign/AddCustomDesign";
-import CustomDesigns from "./pages/spectacle/customDesigns/CustomDesigns";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import { useState } from "react";
-// import { Context } from "./context/Context";
-import { ToastContainer } from 'react-toastify';
-
-import "./style.css";
+import { Route, Routes } from 'react-router-dom';
+import Header from './components/Header';
+import Home from '../src/pages/Home/Home'
+import Dashboard from './pages/Dashboard/Dashboard';
+import ViewStudent from './pages/Students/ViewStudent';
+import AddStudent from './pages/Students/AddStudent';
+import UpdateStudent from './pages/Students/UpdateStudent';
+import AddLecturer from './pages/Lecturer/AddLecturer';
+import UpdateLecturer from './pages/Lecturer/UpdateLecturer';
+import ViewLecturers from './pages/Lecturer/ViewLecturers';
+import CreateSchedule from './pages/Schedules/CreateSchedule';
+import ViewTodaySchedule from './pages/Schedules/ViewTodaySchedule';
+import ViewFullSchedule from './pages/Schedules/ViewFullSchedule';
 
 function App() {
-  // const { user } = useContext(Context);
-  const [isActive, setActive] = useState(false);
-
   return (
-    <Router>
-      <ToastContainer />
-      <TopBar setActive={setActive} isActive={isActive} />
-      <div id="wrapper" className="d-flex col-md-12">
-        <Sidebar setActive={setActive} isActive={isActive} />
-        <div id="content-wrapper" >
-          <Switch>
-            <Route path="/app/dashboard"><Dashboard /></Route>
-            <Route path="/app/new-design"><AddDesign /></Route>
-            <Route path="/app/new-custom-design"><AddCustomDesign /></Route>
-            <Route path="/app/custom-design"><CustomDesigns /></Route>
-            <Route path="/app/designs"><AllDesign /></Route>
-            {/* <Route path="/login">{user ? <Dashboard /> : <Login />}</Route>
-          <Route path="/write">{user ? <Write /> : <Register />}</Route> */}
-          </Switch>
-        </div>
-      </div>
-    </Router >
+    <>
+    <Header/>
+    <Routes>
+      <Route exact  path ="" element = {<Home/>}/>
+      <Route exact  path ="/app" element = {<Dashboard/>}/>
+
+      <Route exact  path ="/app/student" element = {<ViewStudent/>}/>
+      <Route exact  path ="/app/student/addNew" element = {<AddStudent/>}/>
+      <Route exact  path ="/app/student/editStudent" element = {<UpdateStudent/>}/>
+
+      <Route exact  path ="/app/Lecturer" element = {<ViewLecturers/>}/>
+      <Route exact  path ="/app/Lecturer/AddLecturer" element = {<AddLecturer/>}/>
+      <Route exact  path ="/app/Lecturer/editLecturer" element = {<UpdateLecturer/>}/>
+
+      <Route exact  path ="/app/Schedule/createSchedule" element = {<CreateSchedule/>}/>
+      <Route exact  path ="/app/Schedule/today" element = {<ViewTodaySchedule/>}/>
+      <Route exact  path ="/app/Schedule/ViewFullSchedule" element = {<ViewFullSchedule/>}/>
+
+    </Routes>
+    </>
   );
 }
 
