@@ -71,7 +71,7 @@ export default function Notice() {
               
               <div className="col-md-6">
                   <label for="validationCustom01" className="form-label">Module No</label>
-                  <input type="text" className="form-control"maxLength={6} minLength={6} id="validationCustom01" placeholder="Enter module no" onChange={(e)=>{
+                  <input type="text" className="form-control"maxLength={6} minLength={6} id="validationCustom01" placeholder="Enter module code" onChange={(e)=>{
 
                      setmNo(e.target.value);
 
