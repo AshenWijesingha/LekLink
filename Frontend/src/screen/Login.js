@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Login(props) {
     const backUrl = "hello"
 
-    // validate username and password 
+    // validate username and password to login to the system 
     const [remail, setremail] = useState(props?.value ?? '');
     const [rpassword, setrpassword] = useState(props?.value ?? '');
 
