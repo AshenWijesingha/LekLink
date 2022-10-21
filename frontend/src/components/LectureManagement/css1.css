@@ -1,0 +1,669 @@
+
+
+
+
+/*------------------------------------------------------------- Stylesheet TFMS --------------------------------------------------------------*/
+
+
+/*------------------------------------- Google Font ------------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta&family=Teko:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: gainsboro;
+}
+
+/*------------------------------------- Side Panel ------------------------------------------*/
+
+.sidePanel {
+  width: 18%;
+  height: 100vh;
+  left: 0;
+  float: left;
+  position: fixed;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  background-color: rgb(64,64,64);
+}
+
+.sidePanel .panelContent {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidePanel .panelContent button {
+  width: 100%;
+  height: 35px;
+  background-color: none;
+  border: 2px solid #BB9754;
+  color: #BB9754;
+  border-radius: 4px;
+  margin: 12px 0px;
+  background-color: rgb(64,64,64);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.sidePanel .panelContent button:hover {
+  color: white;
+  background-color: #BB9754;
+  transition: 600ms;
+}
+
+.sidePanel .panelContent button img {
+  width: 28px;
+  height: 28px;
+  margin-left: 5px;
+  margin-right: 10px;
+}
+
+/*------------------------------------- Main Body ------------------------------------------*/
+
+.mainBody {
+  width: 82%;
+  min-height: 100vh;
+  float: right;
+  background-color: gainsboro;
+  padding-bottom: 50px;
+}
+
+/*---------------------- Header ----------------------*/
+
+header {
+  position: fixed;
+  width: 82%;
+}
+
+.headerWrapper {
+  width: 100%;
+  display: block;
+}
+
+.navigationBar {
+  width: 100%;
+  height: 60px;
+  background-color: #BB9754;
+  display: flex;
+  align-items: center;
+}
+
+.navbarAlignLeft {
+  width: 35%;
+  height: 40px;
+  float: left;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  font-family: 'Ubuntu', sans-serif;
+  cursor: default;
+  fill: currentColor;
+}
+
+.navbarAlignLeft svg {
+  width: 20px;
+  height: 20px;
+  margin-left: 6px;
+  margin-right: 6px;
+  fill: rgb(64,64,64);
+  cursor: default;
+}
+
+.navbarAlignLeft span {
+  font-size: 16px;
+  color: rgb(64,64,64);
+  cursor: default;
+}
+
+.navbarAlignCenter {
+  width: 30%;
+  height: 40px;
+  float: left;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 26px;
+  font-family: 'Ubuntu', sans-serif;
+  color: rgb(64,64,64);
+  cursor: default;
+}
+
+.navbarAlignRight {
+  width: 35%;
+  height: 40px;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0px 15px;
+}
+
+.navbarAlignRight button {
+  background-color:#BB9754;
+}
+
+.navbarAlignRight svg {
+  width: 18px;
+  height: 18px;
+  margin-left: 10px;
+  margin-right: 10px;
+  fill: rgb(64,64,64);
+}
+
+.navbarAlignRight svg:hover {
+  fill: white;
+  transition: 600ms;
+}
+
+.menu_btn {
+  width: 100%;
+  background-color: rgb(255,255,255,0);
+  display: flex;
+  align-items: center;
+  color: rgb(64,64,64);
+}
+
+.menu_btn svg {
+  height: 18px;
+  width: 18px;
+  margin: 0px 8px;
+  fill: rgb(64,64,64);
+}
+
+.tabs {
+  width: 100%;
+  display: block;
+}
+
+/*---------------------- Body ----------------------*/
+
+#dash_bodyContent {
+  margin: 60px 0px 20px 0px;
+  width: 100%;
+  background-color: red;
+}
+
+.bodyContent {
+  margin: 110px 0px 20px 0px;
+  width: 100%;
+  overflow-y: auto;
+}
+
+.tabContainer {
+  width: 100%;
+}
+
+/*---------------------- Search Panel ----------------------*/
+
+.searchPanel {
+  width: 100%;
+  height: 60px;
+  background-color: white;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+}
+
+.searchPanel_addNew {
+  width: 50%;
+}
+
+.newCustomer_btn {
+  width: 144px;
+  height: 32px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-radius: 3px;
+  background-color: white;
+  border: 2px solid rgb(64,64,64);
+  fill: currentColor;
+}
+
+.newCustomer_btn svg {
+  height: 20px;
+  width: 20px;
+  fill: currentColor;
+  color: rgb(64,64,64);
+  margin: 4px;
+}
+
+.newCustomer_btn span {
+  color: rgb(64,64,64);
+  margin-right: 4px;
+}
+
+
+
+
+
+
+.searchBar {
+  width: 50%;
+  justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  float: right;
+}
+
+.searchBar input {
+  width: 200px;
+  height: 32px;
+  border: 2px solid rgb(64,64,64);
+  padding: 0px 4px;
+  border-radius: 3px 0px 0px 3px;
+  display: flex;
+  align-items: center;
+}
+
+.searchBar button {
+  width: 32px;
+  height: 32px;
+  background-color: rgb(64,64,64);
+  border: 2px solid rgb(64,64,64);
+  border-radius: 0px 3px 3px 0px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.searchBar button svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+}
+
+/*---------------------- Table ----------------------*/
+
+.tableContent {
+  background-color: white;
+  padding: 5px;
+}
+
+#table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  cursor: default;
+}
+
+#table th {
+  border: 1px solid #045F5F;
+  padding: 6px 4px;
+  font-size: 11px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #045F5F;
+  color: white;
+  text-transform: uppercase;
+}
+
+#table td {
+  border: 1px solid lightgrey;
+  padding: 6px 4px;
+  font-size: 11px;
+}
+
+#table tr:nth-child(even){background-color: #f2f2f2;}
+
+#table tr:nth-child(odd){background-color: gainsboro;}
+
+#action {
+  width: 80px;
+  text-align: center;
+}
+
+/* ----------------------map element ----------------*/
+
+
+.prd-image{
+  width: 261px;
+}
+
+
+
+
+/*---------------------- Footer ----------------------*/
+
+footer {
+  width: 82%;
+  bottom: 0;
+  position: fixed;
+  
+  
+}
+
+.footerWrapper {
+  width: 100%;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0px -2px 5px grey;
+  justify-content: flex-end;
+  padding: 0px 10px;
+}
+
+.report_btn {
+  width: 144px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin: 0px 3px;
+  border-radius: 3px;
+  background-color: rgb(64,64,64);
+  border: 2px solid rgb(64,64,64);
+}
+
+.report_btn svg {
+  height: 20px;
+  width: 20px;
+  fill: currentColor;
+  color: white;
+  margin: 4px;
+}
+
+.report_btn span {
+  color: white;
+  margin-right: 4px;
+}
+
+/*------------------------------------------------------------- forms --------------------------------------------------------------*/
+
+.formBackground {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, slategrey, cadetblue);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*---------------------- Create Customer ----------------------*/
+
+.formContainer {
+  border-bottom: 4px solid #045F5F;
+  background-color: gainsboro;
+  width: 800px;
+  overflow-y: auto;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 0px 0px 5px rgb(64,64,64);
+}
+
+.formHeader {
+  width: 800px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px solid rgb(64,64,64);
+  background-color: #045F5F;
+  position: fixed;
+  cursor: default;
+}
+
+.formHeader button {
+  margin-left: 32px;
+  position: fixed;
+  background-color: #045F5F;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.formHeader button svg {
+  height: 20px;
+  width: 20px;
+  fill: white;
+}
+
+.formHeader h2 {
+  width: 100%;
+  font-size: 28px;
+  text-align: center;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.formBody {
+  max-height: 85vh;
+}
+
+.formBody form {
+  width: 90%;
+  margin-left: 10%;
+  padding-bottom: 32px;
+}
+
+.formBody table {
+  width: 100%;
+  margin-top: 80px;
+}
+
+.formBody table tr {
+  height: 36px;
+}
+
+.formBody table tr th, .formBody table tr td {
+  color: rgb(64,64,64);
+  font-family: 'PT Sans', sans-serif;
+  text-align: left;
+  cursor: default;
+}
+
+.formBody table tr td input[type=text] {
+  height: 28px;
+  width: 80%;
+  background-color: white;
+  border: 3px solid grey;
+  padding: 0px 4px;
+}
+
+.formBody table tr td input[type=submit] {
+  width: 90%;
+  background-color: rgb(64,64,64);
+  height: 32px;
+  color: white;
+  margin: 32px 0px 0px 0px;
+  cursor: pointer;
+}
+
+.formBody table tr td input[type=submit]:hover {
+  background-color: #BB9754;
+  transition: 600ms;
+}
+
+/*---------------------- Create User ----------------------*/
+
+.User_formContainer {
+  width: 520px;
+  background-color: gainsboro;
+  border: 1px solid rgb(64,64,64);
+  box-shadow: 0px 0px 5px rgb(64,64,64);
+}
+
+.User_formHeader {
+  width: 519px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-bottom: 2px solid rgb(64,64,64);
+  background-color: #045F5F;
+  position: fixed;
+  cursor: default;
+}
+
+.User_formHeader button {
+  margin-left: 32px;
+  position: fixed;
+  background-color: #045F5F;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.User_formHeader button svg {
+  height: 20px;
+  width: 20px;
+  fill: white;
+}
+
+.User_formHeader h2 {
+  width: 100%;
+  font-size: 25px;
+  text-align: center;
+  color: white;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.User_formBody {
+  width: 100%;
+  padding: 40px 65px 28px 65px;
+  margin-top: 40px;
+  border-bottom: 4px solid #045F5F;
+}
+
+.User_formBody label {
+  display: block;
+  margin: 10px 0px;
+  font-size: 16px;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.User_formBody input[type=text] {
+  width: 100%;
+  height: 28px;
+  border: 2px solid grey;
+  margin-bottom: 5px;
+  padding: 0px 4px;
+}
+
+.User_formBody input[type=submit] {
+  width: 100%;
+  height: 32px;
+  background-color: rgb(64,64,64);
+  margin-top: 32px;
+  color: white;
+  cursor: pointer;
+}
+
+/*---------------------- Login ----------------------*/
+
+.loginLayoutBody {
+  width: 100%;
+  height: 100vh;
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginWrapper {
+  width: 420px;
+  border: 1px solid rgb(64,64,64);
+  background-color: white;
+  box-shadow: 0px 0px 5px rgb(64,64,64);
+}
+
+.login_LogoPanel {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login_LogoPanel img {
+  width: 200px;
+  height: 110px;
+}
+
+.loginHeading {
+  width: 100%;
+  text-align: center;
+  padding: 6px 0px;
+}
+
+.loginHeading h2 {
+  color: black;
+  font-size: 22px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.loginBody {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 50px;
+  align-items: center;
+}
+
+.loginBody form {
+  width: 100%;
+  display: block;
+}
+
+#user_loginBtn {
+  width: 100%;
+  height: 34px;
+  color: white;
+  background-color: #BB9754;
+  margin: 35px auto 8px auto;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#user_loginBtn:hover {
+  background-color: #898E8C;
+  transition: 600ms;
+}
+
+#link_admin {
+  width: 100%;
+  height: 34px;
+  color: white;
+  background-color: #00758F;
+  margin: 8px auto;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#link_admin:hover {
+  background-color: #2E4A62;
+  transition: 600ms;
+}
+
+#admin_loginBtn {
+  width: 100%;
+  height: 34px;
+  color: white;
+  background-color: #005960;
+  margin: 32px auto 20px auto;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#admin_loginBtn:hover {
+  background-color: rgb(64,64,64);
+  transition: 600ms;
+}

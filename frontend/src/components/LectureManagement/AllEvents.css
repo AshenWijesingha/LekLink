@@ -1,0 +1,85 @@
+.abc {
+  background-color: #050756; /* Green */
+  border: none;
+  color: white;
+  padding: 4px 6px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 22px;
+  width: 20%;
+  float: left;
+  margin: 15px 5px;
+  border-radius: 4px;
+}
+
+.gen_btn {
+  background-color: #df2108;
+ 
+}
+
+.gen_btn2 {
+  background-color: #28891b;
+ 
+}
+
+
+.s_btn {
+  width: 100%;
+  height: 34px;
+  color: white;
+  background-color: #1e1084;
+  margin: 32px auto 20px auto;
+  border-radius: 1px;
+  cursor: pointer;
+}
+
+.table {
+ 
+  border-collapse: collapse;
+  width: 100%;
+  cursor: default;
+}
+
+.table th {
+  border: 1px solid #045F5F;
+  padding: 6px 4px;
+  font-size: 11px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #045F5F;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+}
+
+.table td {
+  border: 1px solid lightgrey;
+  padding: 6px 4px;
+  font-size: 9px;
+}
+
+.table tr:nth-child(even){background-color: #f2f2f2;}
+
+.table tr:nth-child(odd){background-color: gainsboro;}
+
+
+
+
+/*.butn {
+  background-color: #4CAF50; /* Green */
+  /*border: none;
+  color: white;
+  padding: 5px 5px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  width: 10%;
+  border-radius: 4px;
+  float: left;
+} */
+
+/*.btn{
+/* width: 100%;
+ background-color: #4CAF50; 
+}*/
