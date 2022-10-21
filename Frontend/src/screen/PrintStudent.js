@@ -9,7 +9,7 @@ import jsPDF from "jspdf";
 
 function PrintStudent(props) {
 
- //generate pdf-----------------------------
+ //generate pdf-to print----------------------------
 
  let docToPrint = React.createRef();
 
