@@ -18,7 +18,7 @@ export default function Profile(props) {
     console.log(pass)
     useEffect(() => {
 
-        //get funtion
+        //get funtion student
         function getstudent() {
             axios.get("http://localhost:5000/user/").then((res) => {
                 setstudent(res.data);
