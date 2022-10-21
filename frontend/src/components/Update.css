@@ -1,0 +1,51 @@
+body {
+    padding-left: 80px;
+     padding-top: 40px;
+     color: #2e323c;
+     background: #f5f6fa;
+     
+     height: 100%;
+     margin-right: 1cm;
+     margin-left: 0;
+ }
+ 
+ 
+ 
+ 
+ .card {
+     background: #D9F9E3;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     border-radius: 5px;
+     border: 0;
+     padding-right: 1cm;
+     padding-left: 0.5cm;
+     padding-bottom: 1cm;
+     margin-bottom: 1px;
+     padding-top: 1cm;
+ }
+ 
+ .text-right{
+     padding-top: 20px;
+     
+ }
+ .btn-secondary{
+     margin-right: 20px;
+     background-color: crimson;
+     border-color: crimson;
+     width: 200px;
+     height: 50px; 
+ }
+ 
+ .btn-success{
+     width: 200px;
+     height: 50px;
+ }
+ 
+ .card-body{
+     padding-left:0 ;
+ }
+ 
+ 
+ 
+ 

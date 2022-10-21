@@ -1,0 +1,122 @@
+.main{
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  padding: 90px 0 90px 0;
+  background-color: #D9F9E3 ;  
+  width: 1400px;
+  padding-left: 0;
+  padding-right: 0;
+  
+  
+}
+.sub-main{
+  display: flex;
+  justify-content:center;
+  height: 700px;
+  width: 35%;
+  box-shadow: 11px 12px #92C6A2 ;
+  padding-top: 10px;
+  border-radius: 60px;
+  background-color: #A6E6B9 ;
+}
+
+.box{
+  padding-top: 30px;
+}
+
+
+
+.login{
+  height: 100px;
+  width: 100px;
+  border-radius: 130px;
+}
+
+.signup-input{
+  
+  width: 400px;
+  height: 50px;
+  border-radius: 60px;
+  box-shadow: inset 0px 0px 25px 0px #888;
+  border: none;
+  background-color: #fff;
+}
+
+.username{
+  height: 25px;
+  width: 25px;
+  position: absolute;
+  padding: 14px 0 0 25px;
+}
+
+.name{
+  padding-left: 70px;
+  font-size: 20px;
+}
+
+.first-input{
+  padding-top: 20px;
+}
+
+.second-input{
+  padding-top: 20px;
+}
+
+.third-input{
+  padding-top: 20px;
+}
+
+
+
+.fifth-input{
+  padding-top: 20px;
+}
+
+.sixth-input{
+  padding-top: 20px;
+}
+
+.seventh-input{
+  padding-top: 20px;
+}
+
+.eighth-input{
+  padding-top: 20px;
+}
+
+
+
+.btn4{
+  padding-top: 0px;
+  width: 200px;
+  margin-top: 70px;
+  height: 50px;
+  border-radius: 60px;
+  background-color: #3a5ce6;
+  color: white;
+  font-size: 25px;
+  border: none;
+  text-align: center;
+  
+  
+}
+
+.link{
+  font-size: 15px;
+  font-weight: 400px;
+}
+
+a{
+  color: #0d045ee5;
+}
+
+.input-seven{
+  width: 400px;
+  height: 50px;
+  border-radius: 60px;
+  box-shadow: inset 0px 0px 25px 0px #888;
+  border: none;
+  background-color: #fff;
+  color: #888;
+}

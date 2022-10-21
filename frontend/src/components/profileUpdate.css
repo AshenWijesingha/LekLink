@@ -1,0 +1,107 @@
+body {
+    padding-left: 80px;
+     padding-top: 40px;
+     color: #2e323c;
+     background: #f5f6fa;
+ 
+     height: 100%;
+     margin-right: 100px;
+     margin-left: 0;
+ }
+ 
+ .account-settings .user-profile {
+     margin: 0 0 1rem 0;
+     padding-bottom: 1rem;
+     text-align: center;
+     
+     margin-right: 300px;
+     
+ }
+ .account-settings .user-profile .user-avatar {
+     margin: 0 0 1rem 0;
+     padding-left: 0;
+ }
+ 
+ .account-settings .user-profile h5.user-name {
+     margin: 0 0 0.5rem 0;
+ }
+ .account-settings .user-profile h6.user-email {
+     margin: 0;
+     font-size: 0.8rem;
+     font-weight: 400;
+     color: #9fa8b9;
+ }
+ .account-settings .about {
+     margin: 2rem 0 0 0;
+     text-align: center;
+ }
+ .account-settings .about h5 {
+     margin: 0 0 15px 0;
+     color: #007ae1;
+ }
+ .account-settings .about p {
+     font-size: 0.825rem;
+ }
+ .form-control {
+     border: 1px solid #cfd1d8;
+     -webkit-border-radius: 2px;
+     -moz-border-radius: 2px;
+     border-radius: 2px;
+     font-size: .825rem;
+     background: #ffffff;
+     color: #2e323c;
+     height: 50px;
+ }
+ 
+ .card {
+     background: #D9F9E3;
+     -webkit-border-radius: 5px;
+     -moz-border-radius: 5px;
+     border-radius: 5px;
+     border: 0;
+     padding-right: 0.5cm;
+     padding-left: 0.5cm;
+     padding-bottom: 1cm;
+     padding-top: 1cm;
+ }
+ 
+ .text-right{
+     padding-top: 20px;
+     
+ }
+ .btn-secondary{
+     margin-right: 20px;
+     background-color: crimson;
+     border-color: crimson;
+     width: 200px;
+     height: 50px; 
+ }
+ 
+ .btn-success{
+     width: 200px;
+     height: 50px;
+ }
+ 
+ 
+ .user-profile{
+     padding-top: 100px;
+ }
+ .card-body{
+     padding-left:0 ;
+ 
+ }
+ .ava5{
+     padding-left: 0;
+     height: 250px;
+ }
+ 
+ .btn-btns{
+     margin-right: 20px;
+     background-color: #6ACC6C;
+     border-color: #6ACC6C;
+     width: 320px;
+     height: 50px;
+     font-size: 18px;
+ }
+ 
+ 
