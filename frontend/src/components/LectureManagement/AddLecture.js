@@ -159,7 +159,7 @@ export default function AddLecture() {
 
               <div className="col-md-3">
                   <label for="validationCustom01" className="form-label">Module</label>
-                  <input type="text" className="form-control"minLength={6} maxLength={6} id="module" placeholder="Enter module no" onChange={(e)=>{
+                  <input type="text" className="form-control"minLength={6} maxLength={6} id="module" placeholder="Enter module code" onChange={(e)=>{
 
                       setmodule(e.target.value);
 
