@@ -11,7 +11,7 @@ export default function AddFeedback() {
     const [feedback, setfeedback] = useState(" ");
      
   
-  // Add new feedback 
+  // Add new feedback as student feedback
     function sendData(e) {
   
       e.preventDefault();
