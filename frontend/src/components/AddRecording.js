@@ -134,7 +134,7 @@ export default function AddRecording() {
 
               <div className="col-3">
                   <button className="btn btn-primary" type="submit" >
-                  <a href="/allRECORDING-table" validate="true"style={{textDecoration:'none', color:'white'}}></a>
+                  <a href="/allRECORDING-table" validate="true"style={{textDecoration:'none', color:'black'}}></a>
                     Submit</button>
               </div>
       </form>
