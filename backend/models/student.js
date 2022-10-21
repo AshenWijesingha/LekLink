@@ -1,41 +1,39 @@
-const mongoose = require('mongoose'); // Erase if already required
+const mongoose = require('mongoose');
 
-// Declare the Schema of the Mongo model
-var Student = new mongoose.Schema({
-    studentID:{
-        type:String,
-        required:true,
-        unique:true,
-        index:true,
-    },
-    email:{
-        type:String,
-        required:true,
-    },
-    Name:{
-        type:String,
-        required:true,
-    },
-    Year:{
-        type:String,
-        required:true,
-    },
-    Batch:{
-        type:String,
-        required:true,
-    },
-    Day:{
-        type:String,
-        required:true,
-    },
-    Specialization:{
-        type:String,
-        required:true,
-    },
-});
+const Schema = mongoose.Schema;
 
-//Export the model
+const StudentSchema = new Schema({
+    
+    name : {
+        type : String,
+        required: true
+    },
+    email : {
+        type: String,
+    },
+    password : {
+        type: String,
+    },
+    cpassword : {
+        type: String,
+    },
+    contact : {
+        type: String,
+    },
+    year : {
+        type: String,
+    },
+    semester : {
+        type: String,
+    },
+    batch : {
+        type: String,
+    },
+    nic : {
+        type: String,
+    }
+})
 
-const Students = mongoose.model("Student",Student);
+const Student = mongoose.model("Student",StudentSchema);
 
-module.exports = Students;
+module.exports = Student;

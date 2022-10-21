@@ -1,43 +1,38 @@
-const express = require('express');
-const mongoose =  require ('mongoose');
-const cors = require('cors');
-const dotenv = require('dotenv');
-const bodyParser = require('body-parser'); //js middleware
+const express = require("express");
+const mongoose = require("mongoose");
+const bodyParser = require("body-parser");
+const cors = require("cors");
+const dotenv = require("dotenv");
+const app = express();
 require("dotenv").config();
 
-const app = express();
 
-const port = process.env.PORT || 8080;
+const PORT = process.env.PORT || 5000;
 
 app.use(cors());
 app.use(bodyParser.json());
 
-
-const url = process.env.MONGODB_URL;
-
-mongoose.connect(url,{
-    useNewUrlParser :true,
-    useUnifiedTopology :true
-});
+const URL = process.env.MONGODB_URI;
 
 
+mongoose.connect(URL, {
+    useCreateIndex: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false,
+})
 
 const connection = mongoose.connection;
-// 
-
-const Student = require('./routes/student.js')
-app.use("/manageStudent",Student)
-
-const Lecturer = require('./routes/lecturer.js')
-app.use("/manageLecturer",Lecturer)
-
-const Schedule = require('./routes/schedule.js')
-app.use("/manageSchedule",Schedule)
-
-connection.once("open",() =>{
-    console.log("MongoDb connected!");
-});
-
-app.listen(port,()=>{
-    console.log("PORT connected on "+port);
+connection.once('open', () => {
+    console.log("Mongodb connection success!");
 })
+
+const userRouter = require("./routes/User-routes");
+
+
+app.use("/user",userRouter);
+
+
+app.listen(PORT, () => {
+console.log(`Server is up and running on port number: ${PORT}`);
+});
