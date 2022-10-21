@@ -92,7 +92,7 @@ export default function Notice() {
            
               <div className="col-md-12">
                   <label for="validationCustom01" className="form-label">Message</label>
-                  <textarea className="form-control"maxLength={1000} minLength={1} id="validationCustom01" rows="4" cols="100" placeholder="Enter here..." onChange={(e)=>{
+                  <textarea className="form-control"maxLength={500} minLength={1} id="validationCustom01" rows="4" cols="100" placeholder="Enter here..." onChange={(e)=>{
 
                       setmessage(e.target.value);
 
