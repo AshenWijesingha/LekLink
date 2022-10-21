@@ -115,7 +115,7 @@ export default function AddLecture() {
                 <br></br>
               <div className="col-md-6">
                   <label for="validationCustom01" className="form-label">Lecture Name</label>
-                  <input type="text" className="form-control" maxLength={20} minLength={8} id="validationCustom01" placeholder="Enter Lecture Name" onChange={(e)=>{
+                  <input type="text" className="form-control" maxLength={30} minLength={8} id="validationCustom01" placeholder="Enter Lecture Name" onChange={(e)=>{
 
                      setlName(e.target.value);
 
