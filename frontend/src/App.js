@@ -1,39 +1,29 @@
-import { Route, Routes } from 'react-router-dom';
-import Header from './components/Header';
-import Home from '../src/pages/Home/Home'
-import Dashboard from './pages/Dashboard/Dashboard';
-import ViewStudent from './pages/Students/ViewStudent';
-import AddStudent from './pages/Students/AddStudent';
-import UpdateStudent from './pages/Students/UpdateStudent';
-import AddLecturer from './pages/Lecturer/AddLecturer';
-import UpdateLecturer from './pages/Lecturer/UpdateLecturer';
-import ViewLecturers from './pages/Lecturer/ViewLecturers';
-import CreateSchedule from './pages/Schedules/CreateSchedule';
-import ViewTodaySchedule from './pages/Schedules/ViewTodaySchedule';
-import ViewFullSchedule from './pages/Schedules/ViewFullSchedule';
+import React from "react";
+import { BrowserRouter as BRouter, Route, Routes } from "react-router-dom";
+import AddStudent from "./screen/AddStudent";
+import AddUser from "./screen/AddUser";
+import Login from "./screen/Login";
+import Viewstudent from "./screen/Viewstudent";
+import Signup from "./screen/Signup";
+import Loginmain from "./screen/Loginmain";
+import Profile from "./screen/Profile";
+
 
 function App() {
   return (
-    <>
-    <Header/>
-    <Routes>
-      <Route exact  path ="" element = {<Home/>}/>
-      <Route exact  path ="/app" element = {<Dashboard/>}/>
+    <BRouter>
+      <Routes>
+        <Route exact path="/AddStudent" element={<AddStudent />} />
+        <Route exact path="/adduser" element={<AddUser/>} />
+        <Route exact path="/" element={<Viewstudent/>} />
+        <Route exact path="/login" element={<Login/>} />
+        <Route exact path="/signup" element={<Signup/>} />
+        <Route exact path="/log" element={<Loginmain/>} />
+        <Route exact path="/profile" element={<Profile/>} />
 
-      <Route exact  path ="/app/student" element = {<ViewStudent/>}/>
-      <Route exact  path ="/app/student/addNew" element = {<AddStudent/>}/>
-      <Route exact  path ="/app/student/editStudent" element = {<UpdateStudent/>}/>
 
-      <Route exact  path ="/app/Lecturer" element = {<ViewLecturers/>}/>
-      <Route exact  path ="/app/Lecturer/AddLecturer" element = {<AddLecturer/>}/>
-      <Route exact  path ="/app/Lecturer/editLecturer" element = {<UpdateLecturer/>}/>
-
-      <Route exact  path ="/app/Schedule/createSchedule" element = {<CreateSchedule/>}/>
-      <Route exact  path ="/app/Schedule/today" element = {<ViewTodaySchedule/>}/>
-      <Route exact  path ="/app/Schedule/ViewFullSchedule" element = {<ViewFullSchedule/>}/>
-
-    </Routes>
-    </>
+      </Routes>
+    </BRouter>
   );
 }
 
