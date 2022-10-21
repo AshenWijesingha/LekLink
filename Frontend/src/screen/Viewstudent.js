@@ -45,7 +45,7 @@ function Viewstudent(props) {
         getstudent();
     }, [])
 
-    //delete funtion
+    //delete funtion to delete a student
     function onDelete(_id) {
         console.log(_id);
         axios.delete("http://localhost:5000/user/" + _id).then((res) => {
